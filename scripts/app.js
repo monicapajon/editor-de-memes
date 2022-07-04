@@ -1,0 +1,1 @@
+alert("tu JS está linkeado correctamente!")
