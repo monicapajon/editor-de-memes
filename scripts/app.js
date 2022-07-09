@@ -48,3 +48,4 @@ downloadBtn.addEventListener("click", () => {
 if (window.screen.width <= '700') {
 	aside.classList.add('hidden')
 }
+
