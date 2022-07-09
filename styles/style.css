@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: var(--main-background-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.light {
+    --background-color: #FAFAFA;
+    --header-background-color: #E0E0E0; 
+    --main-background-color: #EEEEEE;
+    --color: #424242;
+    --hover-botones: #BDBDBD;
+    --hover-input: #BDBDBD;
+    --input-color: #E0E0E0;
+    --thumb-color: #30343F;
+}
+body.dark {
+    --background-color: #252935;
+    --header-background-color: #191E2B;
+    --main-background-color: #30343F;
+    --color: #EEEEEE;
+    --hover-input: #4E5565;
+    --input-color: #393e49;
+    --thumb-color: #EEEEEE;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600; 
+}
+h2 {
+    text-align: center;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+select {
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+i {
+	margin: 0 10px 0 10px;
+}
+input[type="color"]{
+    width: 23px;
+    height: 21px;
+    border:none;
+    margin-right: 5px;
+    border-radius: 50%;
+    background:none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: 1px solid transparent; 
+	border-radius: 50%;
+}
