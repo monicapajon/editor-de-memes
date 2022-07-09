@@ -1,4 +1,3 @@
-alert("tu JS está linkeado correctamente!")
 const body = document.body
 const btnImgAside = document.getElementById("btn-img-aside")
 const btnTxtAside = document.getElementById("btn-txt-aside")
