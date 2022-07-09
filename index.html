@@ -31,7 +31,7 @@
         </button>
         <button aria-label="Cambiar tema" id="btn-theme" class="button-nav">
           <i aria-hidden= "true" class="fas fa-lightbulb"
-            ><span id="text-theme" class="nav-icon">Modo claro </span></i
+            ><span id="text-theme" class="nav-icon">Modo oscuro</span></i
           >
         </button>
       </nav>
@@ -229,9 +229,188 @@
             </div>
           </form>
       </div>
-
-
-    
+            <!-- ----------TEXTO-------------->
+            <div class="aside-txt hidden">
+              <h2>TEXTO</h2>
+              <div class="superior flex-column mb-20px">
+                <label class="bold-text" for="top-text">SUPERIOR</label>
+                <textarea
+                  aria-label="Ingresa el texto superior del meme"
+                  class="input-style"
+                  type="text"
+                  id="top-text"
+                  placeholder="TOP TEXT"
+                ></textarea>
+                <div>
+                  <input aria-label="Eliminar texto superior" id="check-top-text" type="checkbox" />
+                  <label for="check-top-text" class="text-check"
+                    >Sin texto superior</label
+                  >
+                </div>
+              </div>
+      
+              <div class="inferior flex-column mb-20px">
+                <label class="bold-text" for="bottom-text">INFERIOR</label>
+                <textarea
+                  aria-label="Ingresa el texto inferior del meme"
+                  class="input-style"
+                  name=""
+                  type="text"
+                  id="bottom-text"
+                  placeholder="BOTTOM TEXT"
+                ></textarea>
+                <div>
+                  <input aria-label="Eliminar texto inferior" id="check-bottom-text" type="checkbox" />
+                  <label for="check-bottom-text" class="text-check"
+                    >Sin texto inferior</label
+                  >
+                </div>
+              </div>
+      
+              <div class="fuente flex-column mb-20px">
+                <label aria-label="Elegí una fuente para el texto" class="bold-text" for="optionTextFont">FUENTE</label>
+                <select class="input-style" id="optionTextFont" name="idFonts">
+                  <option value="Arial">Arial</option>
+                  <option value="Arial Black">Arial Black</option>
+                  <option value="American Typewriter">American Typewriter</option>
+                  <option value="Courier New Black">Andale Mono</option>
+                  <option value="Comic Sans MS">Comic Sans MS</option>
+                  <option value="Helvetica">Helvetica</option>
+                  <option value="Impact">Impact</option>
+                  <option value="Verdana">Verdana</option>
+                  <option value="Times New Roman">Times New Roman</option>
+                </select>
+      
+                <div class="option-text flex">
+                  <input
+                    aria-label="Elegí el tamaño de la fuente"
+                    class="input-fuente input-style"
+                    id="fontSize"
+                    type="number"
+                    value="50"
+                    min="12"
+                    max="90"
+                    aria-valuemin="12"
+                    aria-valuemax= "90"
+                  />
+                  <div class="btn-fuente">
+                    <button aria-label="Alinear texto a la izquierda" class="center button" id="btn-left">
+                      <i aria-hidden="true"  class="fas fa-align-left color"></i>
+                    </button>
+                    <button aria-label="Alinear texto al centro" class="center button" id="btn-center">
+                      <i aria-hidden="true" class="fas fa-align-center color"></i>
+                    </button>
+                    <button aria-label="Alinear texto a la derecha" class="center button" id="btn-right">
+                      <i aria-hidden="true" class="fas fa-align-right color"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="flex-column mb-20px">
+                <div class="color-background-container flex space-background">
+                  <div class="flex-column half-space">
+                    <label for="text-color" class="bold-text">COLOR</label>
+                    <div id="color-input" class="cont-input-color">
+                      <input
+                        aria-label="Color del texto"
+                        class="background-input"
+                        type="color"
+                        id="text-color"
+                        value="#191E2B"
+                        aria-valuenow="#191E2B"
+                      />
+                      <span
+                        class="text-background-color"
+                        id="text-color-hex"
+                        aria-hidden= "true"
+                        >#191E2B</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex-column half-space">
+                    <label class="bold-text" for="text-background">FONDO</label>
+                    <div id="background-input" class="cont-input-color">
+                      <input
+                        aria-label="Color de fondo del texto"
+                        class="background-input"
+                        type="color"
+                        id="text-background"
+                        value="#191E2B"
+                        aria-valuenow="#191E2B"
+                      />
+                      <span
+                        class="text-background-color"
+                        id="text-background-hex"
+                        aria-hidden= "true"
+                        >#191E2B</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox-transparent" />
+                  <label for="checkbox-transparent" class="text-check"
+                    >Fondo transparente </label>
+                </div>
+              </div>
+      
+              <div class="border-container mb-20px">
+                <h4 class="bold-text">CONTORNO</h4>
+                <div class="border-options mt-5px">
+                  <button
+                    aria-label="Sin contorno de texto"
+                    class="input-style button"
+                    type="button"
+                    id="text-shadow-none"
+                  >
+                    Ninguno
+                  </button>
+                  <button
+                    aria-label="Contorno de texto claro"
+                    class="input-style button"
+                    type="button"
+                    id="text-shadow-light"
+                  >
+                    Claro
+                  </button>
+                  <button
+                    aria-label="Contorno de texto oscuro"
+                    class="input-style button"
+                    type="button"
+                    id="text-shadow-dark"
+                  >
+                    Oscuro
+                  </button>
+                </div>
+              </div>
+      
+              <div class="line-container flex-column mb-20px">
+                <label class="bold-text" for="padding-text">ESPACIADO</label>
+                <input
+                  class="input-style"
+                  type="number"
+                  id="padding-text"
+                  min="20"
+                  max="50"
+                  aria-valuemin="20"
+                  aria-valuemax= "50"
+                />
+              </div>
+      
+              <div class="space-container flex-column mb-20px">
+                <label class="bold-text" for="line-height">INTERLINEADO</label>
+                <select class="input-style" name="" id="line-height">
+                  <option value="0.8">0.8</option>
+                  <option value="1">1</option>
+                  <option value="1.2">1.2</option>
+                  <option value="1.5">1.5</option>
+                  <option value="2">2</option>
+                  <option value="2.5">2.5</option>
+                </select>
+              </div>
+            </div>
+          </aside>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
