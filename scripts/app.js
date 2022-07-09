@@ -10,3 +10,9 @@ const closeAside = document.getElementById('close-aside')
 const aside = document.querySelector('.aside')
 // ------HEADER
 // --Boton imagen
+btnImgAside.addEventListener("click", () => {
+	aside.classList.remove('hidden')
+	asideImg.classList.remove("hidden")
+	asideTxt.classList.add("hidden")
+
+})
